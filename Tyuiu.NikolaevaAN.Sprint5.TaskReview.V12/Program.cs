@@ -41,7 +41,7 @@ namespace Tyuiu.NikolaevaAN.Sprint5.TaskReview.V12
             Console.WriteLine("Находится в файле: ");
             pathSaverFile = ds.LoadDataAndSave(path);
             Console.WriteLine(pathSaverFile);
-            Console.ReadKey(); //
+            Console.ReadKey();
         }
     }
 }

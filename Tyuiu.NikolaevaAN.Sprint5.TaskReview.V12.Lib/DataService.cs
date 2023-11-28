@@ -30,7 +30,7 @@ namespace Tyuiu.NikolaevaAN.Sprint5.TaskReview.V12.Lib
                     File.AppendAllText(pathSaverFile, strLine + Environment.NewLine);
                     strLine = "";
                 }
-                return pathSaverFile; //
+                return pathSaverFile;
             }
         }
     }
