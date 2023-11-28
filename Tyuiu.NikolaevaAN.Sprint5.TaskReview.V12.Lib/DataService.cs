@@ -26,7 +26,17 @@ namespace Tyuiu.NikolaevaAN.Sprint5.TaskReview.V12.Lib
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    strLine = line.ToUpper();
+                    for (int i = 0; i < line.Length; i++)
+                    {
+                        if ((line[i] >= 'а') && (line[i] <= 'я'))
+                        {
+                            strLine += line[i].ToString().ToUpper();
+                        }
+                        else
+                        {
+                            strLine += line[i];
+                        }
+                    }
                     File.AppendAllText(pathSaverFile, strLine + Environment.NewLine);
                     strLine = "";
                 }
